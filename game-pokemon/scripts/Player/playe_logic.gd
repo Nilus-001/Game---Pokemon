@@ -1,11 +1,15 @@
 extends Object
 class_name PlayerLogic
 
+var name : String
 var inventory : Array[Item] = []
 var slots : Array[Pokemon] = []
 var money : int = 0
 var upgrades : Array = [] #todo: implement later if needed
 
+func _init(_name : String, start_money : int  ) -> void:
+	name = _name
+	money = start_money
 
 
 #---------------------------------------------- MONEY ---------
